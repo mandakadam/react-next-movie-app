@@ -1,0 +1,1 @@
+{"ast":null,"code":"var APIKEY = \"af8cdcd9\";\nexport default APIKEY;","map":{"version":3,"sources":["F:/xampp/htdocs/React/next-movie-app/API_KEY.js"],"names":["APIKEY"],"mappings":"AAAA,IAAMA,MAAM,GAAG,UAAf;AAEA,eAAeA,MAAf","sourcesContent":["const APIKEY = \"af8cdcd9\";\r\n\r\nexport default APIKEY "]},"metadata":{},"sourceType":"module"}

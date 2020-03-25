@@ -1,0 +1,1 @@
+{"ast":null,"code":"import React from \"react\";\nvar __jsx = React.createElement;\nimport 'bootstrap/dist/css/bootstrap.min.css';\n\nconst App = () => __jsx(\"div\", null);\n\nexport default App;","map":null,"metadata":{},"sourceType":"module"}

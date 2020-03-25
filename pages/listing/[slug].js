@@ -1,5 +1,5 @@
 import Layout from '../../components/Layout';
-import API_KEY from '../API_KEY';
+import API_KEY from '../../API_KEY';
 import Link from 'next/link'
 
 

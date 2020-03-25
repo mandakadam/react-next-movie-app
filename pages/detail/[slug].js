@@ -1,5 +1,5 @@
 import Layout from '../../components/Layout';
-import API_KEY from '../API_KEY';
+import API_KEY from '../../API_KEY';
 
 class Detail extends React.Component {
 

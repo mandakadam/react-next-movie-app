@@ -1,5 +1,19 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\detail\\[slug].js"],{
 
+/***/ "./API_KEY.js":
+/*!********************!*\
+  !*** ./API_KEY.js ***!
+  \********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var APIKEY = "af8cdcd9";
+/* harmony default export */ __webpack_exports__["default"] = (APIKEY);
+
+/***/ }),
+
 /***/ "./components/Layout.js":
 /*!******************************!*\
   !*** ./components/Layout.js ***!
@@ -5177,20 +5191,6 @@ try {
 
 /***/ }),
 
-/***/ "./pages/API_KEY.js":
-/*!**************************!*\
-  !*** ./pages/API_KEY.js ***!
-  \**************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-var APIKEY = "af8cdcd9";
-/* harmony default export */ __webpack_exports__["default"] = (APIKEY);
-
-/***/ }),
-
 /***/ "./pages/detail/[slug].js":
 /*!********************************!*\
   !*** ./pages/detail/[slug].js ***!
@@ -5210,7 +5210,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/Layout */ "./components/Layout.js");
-/* harmony import */ var _API_KEY__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../API_KEY */ "./pages/API_KEY.js");
+/* harmony import */ var _API_KEY__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../API_KEY */ "./API_KEY.js");
 
 
 

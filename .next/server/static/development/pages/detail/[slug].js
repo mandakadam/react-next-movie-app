@@ -93,6 +93,20 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "./API_KEY.js":
+/*!********************!*\
+  !*** ./API_KEY.js ***!
+  \********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const APIKEY = "af8cdcd9";
+/* harmony default export */ __webpack_exports__["default"] = (APIKEY);
+
+/***/ }),
+
 /***/ "./components/Layout.js":
 /*!******************************!*\
   !*** ./components/Layout.js ***!
@@ -2018,20 +2032,6 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
-/***/ "./pages/API_KEY.js":
-/*!**************************!*\
-  !*** ./pages/API_KEY.js ***!
-  \**************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-const APIKEY = "af8cdcd9";
-/* harmony default export */ __webpack_exports__["default"] = (APIKEY);
-
-/***/ }),
-
 /***/ "./pages/detail/[slug].js":
 /*!********************************!*\
   !*** ./pages/detail/[slug].js ***!
@@ -2044,7 +2044,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/Layout */ "./components/Layout.js");
-/* harmony import */ var _API_KEY__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../API_KEY */ "./pages/API_KEY.js");
+/* harmony import */ var _API_KEY__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../API_KEY */ "./API_KEY.js");
 var _jsxFileName = "F:\\xampp\\htdocs\\React\\next-movie-app\\pages\\detail\\[slug].js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
