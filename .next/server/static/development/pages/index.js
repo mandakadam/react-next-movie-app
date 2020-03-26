@@ -1,7 +1,7 @@
 module.exports =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
-/******/ 	var installedModules = require('../../../../ssr-module-cache.js');
+/******/ 	var installedModules = require('../../../ssr-module-cache.js');
 /******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
@@ -88,24 +88,10 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
-
-/***/ "./API_KEY.js":
-/*!********************!*\
-  !*** ./API_KEY.js ***!
-  \********************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-const APIKEY = "af8cdcd9";
-/* harmony default export */ __webpack_exports__["default"] = (APIKEY);
-
-/***/ }),
 
 /***/ "./components/Layout.js":
 /*!******************************!*\
@@ -2032,10 +2018,10 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
-/***/ "./pages/listing/[slug].js":
-/*!*********************************!*\
-  !*** ./pages/listing/[slug].js ***!
-  \*********************************/
+/***/ "./pages/index.js":
+/*!************************!*\
+  !*** ./pages/index.js ***!
+  \************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2043,173 +2029,22 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/Layout */ "./components/Layout.js");
-/* harmony import */ var _API_KEY__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../API_KEY */ "./API_KEY.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4__);
-var _jsxFileName = "F:\\xampp\\htdocs\\React\\next-movie-app\\pages\\listing\\[slug].js";
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+var _jsxFileName = "F:\\xampp\\htdocs\\React\\next-movie-app\\pages\\index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-
-
-
-class Page extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
-  static async getInitialProps(ctx) {
-    const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4___default()(`http://www.omdbapi.com/?apikey=${_API_KEY__WEBPACK_IMPORTED_MODULE_2__["default"]}&page=1&s=${ctx.query.slug}`);
-    const data = await res.json();
-    return {
-      movieList: data.Search
-    };
+const Index = props => __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 4,
+    columnNumber: 5
   }
+}, props.children);
 
-  componentDidMount() {// console.log(this.props)
-  }
-
-  render() {
-    const {
-      movieList
-    } = this.props;
-    const listing = movieList && movieList.map((item, index) => __jsx("div", {
-      className: "col-sm-6 col-md-4 col-lg-3 mb-3",
-      key: index,
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 23,
-        columnNumber: 13
-      }
-    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
-      href: "/detail/[slug]",
-      as: `/detail/${item.imdbID}`,
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 24,
-        columnNumber: 18
-      }
-    }, __jsx("a", {
-      className: "card",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 25,
-        columnNumber: 21
-      }
-    }, __jsx("div", {
-      className: "card-header p-0",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 26,
-        columnNumber: 25
-      }
-    }, __jsx("img", {
-      className: "card-img-top",
-      src: item.Poster,
-      alt: "",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 27,
-        columnNumber: 29
-      }
-    })), __jsx("div", {
-      className: "card-body",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 29,
-        columnNumber: 25
-      }
-    }, __jsx("div", {
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 30,
-        columnNumber: 29
-      }
-    }, __jsx("h6", {
-      className: "card-title",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 31,
-        columnNumber: 29
-      }
-    }, item.Title, "  "), __jsx("span", {
-      className: "badge badge-pill badge-dark text-capitalize",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 32,
-        columnNumber: 29
-      }
-    }, item.Type))), __jsx("div", {
-      className: "card-footer",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 35,
-        columnNumber: 25
-      }
-    }, __jsx("span", {
-      className: "btn btn-danger btn-sm rounded-pill",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 36,
-        columnNumber: 25
-      }
-    }, "View Details "))))));
-    return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 44,
-        columnNumber: 13
-      }
-    }, __jsx("div", {
-      className: "container",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 45,
-        columnNumber: 17
-      }
-    }, __jsx("div", {
-      className: "row listing",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 46,
-        columnNumber: 21
-      }
-    }, listing ? listing : __jsx("div", {
-      className: "col-12",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 47,
-        columnNumber: 48
-      }
-    }, __jsx("div", {
-      className: "alert alert-danger",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 47,
-        columnNumber: 72
-      }
-    }, "No Movies found. Please search different movie"), " "))));
-  }
-
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (Page);
+/* harmony default export */ __webpack_exports__["default"] = (Index);
 
 /***/ }),
 
@@ -2224,26 +2059,15 @@ class Page extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
 
 /***/ }),
 
-/***/ 4:
-/*!***************************************!*\
-  !*** multi ./pages/listing/[slug].js ***!
-  \***************************************/
+/***/ 3:
+/*!******************************!*\
+  !*** multi ./pages/index.js ***!
+  \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! F:\xampp\htdocs\React\next-movie-app\pages\listing\[slug].js */"./pages/listing/[slug].js");
+module.exports = __webpack_require__(/*! F:\xampp\htdocs\React\next-movie-app\pages\index.js */"./pages/index.js");
 
-
-/***/ }),
-
-/***/ "isomorphic-unfetch":
-/*!*************************************!*\
-  !*** external "isomorphic-unfetch" ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("isomorphic-unfetch");
 
 /***/ }),
 
@@ -2314,4 +2138,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=[slug].js.map
+//# sourceMappingURL=index.js.map
