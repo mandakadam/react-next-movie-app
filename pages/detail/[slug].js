@@ -1,5 +1,6 @@
 import Layout from '../../components/Layout';
 import API_KEY from '../../API_KEY';
+import fetch from 'isomorphic-unfetch'
 
 class Detail extends React.Component {
 
