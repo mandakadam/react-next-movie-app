@@ -5,7 +5,7 @@ import fetch from 'isomorphic-unfetch'
 class Detail extends React.Component {
 
   static async getInitialProps(ctx) {
-    const res = await fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&i=${ctx.query.slug}`);
+    const res = await fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&i=${ctx.query.slug}`);
     const data = await res.json();
     return {
         detail: data,

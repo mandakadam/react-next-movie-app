@@ -7,7 +7,7 @@ import fetch from 'isomorphic-unfetch'
 class Page extends React.Component {
 
   static async getInitialProps(ctx) {
-    const res = await fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&page=1&s=${ctx.query.slug}`);
+    const res = await fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&page=1&s=${ctx.query.slug}`);
     const data = await res.json();
     return {
         movieList: data.Search,
