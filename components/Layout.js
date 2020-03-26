@@ -22,15 +22,17 @@ const Layout = (props) => {
                     <h5>Search your favourite movie</h5>
                     <div className="card shadow-sm border-light">
                         <div className="card-body p-lg-4">
-                            <div className="input-group ">
-                                <input className="form-control" placeholder="Enter text to Search" value={search} onChange={(e)=>handleChange(e)} type="text"  />
-                            
-                                <div className="input-group-append">
-                                    <Link href="/listing/[slug]" as={`/listing/${search}`}>
-                                        <a className="btn btn-danger">Search</a>
-                                    </Link>
+                            <form>
+                                <div className="input-group ">
+                                    <input className="form-control" placeholder="Enter text to Search" value={search} onChange={(e)=>handleChange(e)} type="text"  />
+                                
+                                    <div className="input-group-append">
+                                        <Link href="/listing/[slug]" as={`/listing/${search}`}>
+                                            <button type="submit" className="btn btn-danger">Search</button>
+                                        </Link>
+                                    </div>
                                 </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
