@@ -1,4 +1,4 @@
-webpackHotUpdate("static\\development\\pages\\index.js",{
+webpackHotUpdate("static\\development\\pages\\listing\\[slug].js",{
 
 /***/ "./components/Layout.js":
 /*!******************************!*\
@@ -20,11 +20,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _components_Navbar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Navbar */ "./components/Navbar.js");
+/* harmony import */ var _components_NProgressContainer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/NProgressContainer */ "./components/NProgressContainer.js");
 var _this = undefined,
     _jsxFileName = "F:\\xampp\\htdocs\\React\\next-movie-app\\components\\Layout.js";
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -45,28 +47,41 @@ var Layout = function Layout(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 15,
       columnNumber: 5
     }
   }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_4___default.a, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 16,
       columnNumber: 9
     }
   }, __jsx("title", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
+      lineNumber: 17,
       columnNumber: 13
     }
   }, "React + Next.js")), __jsx(_components_Navbar__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18,
+      lineNumber: 19,
+      columnNumber: 9
+    }
+  }), __jsx(_components_NProgressContainer__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    color: "#29d",
+    options: {
+      trickleSpeed: 50
+    },
+    showAfterMs: 300,
+    spinner: true,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21,
       columnNumber: 9
     }
   }), __jsx("div", {
@@ -74,7 +89,7 @@ var Layout = function Layout(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
+      lineNumber: 27,
       columnNumber: 9
     }
   }, __jsx("div", {
@@ -82,7 +97,7 @@ var Layout = function Layout(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20,
+      lineNumber: 28,
       columnNumber: 13
     }
   }, __jsx("div", {
@@ -90,14 +105,14 @@ var Layout = function Layout(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
+      lineNumber: 29,
       columnNumber: 17
     }
   }, __jsx("h5", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
+      lineNumber: 30,
       columnNumber: 21
     }
   }, "Search your favourite movie"), __jsx("div", {
@@ -105,7 +120,7 @@ var Layout = function Layout(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23,
+      lineNumber: 31,
       columnNumber: 21
     }
   }, __jsx("div", {
@@ -113,14 +128,14 @@ var Layout = function Layout(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24,
+      lineNumber: 32,
       columnNumber: 25
     }
   }, __jsx("form", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 33,
       columnNumber: 29
     }
   }, __jsx("div", {
@@ -128,7 +143,7 @@ var Layout = function Layout(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26,
+      lineNumber: 34,
       columnNumber: 33
     }
   }, __jsx("input", {
@@ -142,7 +157,7 @@ var Layout = function Layout(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 35,
       columnNumber: 37
     }
   }), __jsx("div", {
@@ -150,7 +165,7 @@ var Layout = function Layout(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29,
+      lineNumber: 37,
       columnNumber: 37
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -159,7 +174,7 @@ var Layout = function Layout(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30,
+      lineNumber: 38,
       columnNumber: 41
     }
   }, __jsx("button", {
@@ -168,7 +183,7 @@ var Layout = function Layout(props) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31,
+      lineNumber: 39,
       columnNumber: 45
     }
   }, "Search")))))))))), props.children);
@@ -179,4 +194,4 @@ var Layout = function Layout(props) {
 /***/ })
 
 })
-//# sourceMappingURL=index.js.878b291337d903da4cdc.hot-update.js.map
+//# sourceMappingURL=[slug].js.2e86c324f95093fd09af.hot-update.js.map

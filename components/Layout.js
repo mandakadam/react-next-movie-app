@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Head from 'next/head'
 import { useState } from 'react';
 import Navbar from '../components/Navbar'
+import NProgressContainer from "../components/NProgressContainer";
 
 const Layout = (props) => {
     const [search, setSearch] = useState('');
@@ -16,6 +17,13 @@ const Layout = (props) => {
             <title>React + Next.js</title>
         </Head>
         <Navbar />
+
+        <NProgressContainer  color="red"
+        options={{ trickleSpeed: 50 }}
+        showAfterMs={300}
+        spinner />
+
+
         <div className="container">
             <div className="row">
                 <div className="col-12 py-4">
@@ -41,6 +49,7 @@ const Layout = (props) => {
         {
             props.children
         }
+
     </div>
     )
 }

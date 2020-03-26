@@ -127,9 +127,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/head */ "next/head");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _components_Navbar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Navbar */ "./components/Navbar.js");
+/* harmony import */ var _components_NProgressContainer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/NProgressContainer */ "./components/NProgressContainer.js");
 var _jsxFileName = "F:\\xampp\\htdocs\\React\\next-movie-app\\components\\Layout.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -151,28 +153,41 @@ const Layout = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 15,
       columnNumber: 5
     }
   }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_4___default.a, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 16,
       columnNumber: 9
     }
   }, __jsx("title", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
+      lineNumber: 17,
       columnNumber: 13
     }
   }, "React + Next.js")), __jsx(_components_Navbar__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18,
+      lineNumber: 19,
+      columnNumber: 9
+    }
+  }), __jsx(_components_NProgressContainer__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    color: "red",
+    options: {
+      trickleSpeed: 50
+    },
+    showAfterMs: 300,
+    spinner: true,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21,
       columnNumber: 9
     }
   }), __jsx("div", {
@@ -180,7 +195,7 @@ const Layout = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
+      lineNumber: 27,
       columnNumber: 9
     }
   }, __jsx("div", {
@@ -188,7 +203,7 @@ const Layout = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20,
+      lineNumber: 28,
       columnNumber: 13
     }
   }, __jsx("div", {
@@ -196,14 +211,14 @@ const Layout = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
+      lineNumber: 29,
       columnNumber: 17
     }
   }, __jsx("h5", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
+      lineNumber: 30,
       columnNumber: 21
     }
   }, "Search your favourite movie"), __jsx("div", {
@@ -211,7 +226,7 @@ const Layout = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23,
+      lineNumber: 31,
       columnNumber: 21
     }
   }, __jsx("div", {
@@ -219,14 +234,14 @@ const Layout = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24,
+      lineNumber: 32,
       columnNumber: 25
     }
   }, __jsx("form", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 33,
       columnNumber: 29
     }
   }, __jsx("div", {
@@ -234,7 +249,7 @@ const Layout = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26,
+      lineNumber: 34,
       columnNumber: 33
     }
   }, __jsx("input", {
@@ -246,7 +261,7 @@ const Layout = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 35,
       columnNumber: 37
     }
   }), __jsx("div", {
@@ -254,7 +269,7 @@ const Layout = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29,
+      lineNumber: 37,
       columnNumber: 37
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -263,7 +278,7 @@ const Layout = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30,
+      lineNumber: 38,
       columnNumber: 41
     }
   }, __jsx("button", {
@@ -272,13 +287,106 @@ const Layout = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31,
+      lineNumber: 39,
       columnNumber: 45
     }
   }, "Search")))))))))), props.children);
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
+
+/***/ }),
+
+/***/ "./components/NProgressContainer.js":
+/*!******************************************!*\
+  !*** ./components/NProgressContainer.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "styled-jsx/style");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! nprogress */ "nprogress");
+/* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(nprogress__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/router */ "next/router");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_3__);
+
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+class NProgressContainer extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
+  constructor(...args) {
+    super(...args);
+
+    _defineProperty(this, "timer", null);
+
+    _defineProperty(this, "routeChangeStart", () => {
+      const {
+        showAfterMs
+      } = this.props;
+      clearTimeout(this.timer);
+      this.timer = setTimeout(nprogress__WEBPACK_IMPORTED_MODULE_2___default.a.start, showAfterMs);
+    });
+
+    _defineProperty(this, "routeChangeEnd", () => {
+      clearTimeout(this.timer);
+      nprogress__WEBPACK_IMPORTED_MODULE_2___default.a.done();
+    });
+  }
+
+  componentDidMount() {
+    const {
+      options
+    } = this.props;
+
+    if (options) {
+      nprogress__WEBPACK_IMPORTED_MODULE_2___default.a.configure(options);
+    }
+
+    next_router__WEBPACK_IMPORTED_MODULE_3___default.a.events.on('routeChangeStart', this.routeChangeStart);
+    next_router__WEBPACK_IMPORTED_MODULE_3___default.a.events.on('routeChangeComplete', this.routeChangeEnd);
+    next_router__WEBPACK_IMPORTED_MODULE_3___default.a.events.on('routeChangeError', this.routeChangeEnd);
+  }
+
+  componentWillUnmount() {
+    clearTimeout(this.timer);
+    next_router__WEBPACK_IMPORTED_MODULE_3___default.a.events.off('routeChangeStart', this.routeChangeStart);
+    next_router__WEBPACK_IMPORTED_MODULE_3___default.a.events.off('routeChangeComplete', this.routeChangeEnd);
+    next_router__WEBPACK_IMPORTED_MODULE_3___default.a.events.off('routeChangeError', this.routeChangeEnd);
+  }
+
+  render() {
+    const {
+      color,
+      spinner
+    } = this.props;
+    return __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+      id: "2957702060",
+      dynamic: [color, color, color, spinner ? "block" : "none", color, color],
+      __self: this
+    }, `#nprogress{pointer-events:none;}#nprogress .bar{background:${color};position:fixed;z-index:1031;top:0;left:0;width:100%;height:2px;}#nprogress .peg{display:block;position:absolute;right:0px;width:100px;height:100%;box-shadow:0 0 10px ${color},0 0 5px ${color};opacity:1;-webkit-transform:rotate(3deg) translate(0px,-4px);-ms-transform:rotate(3deg) translate(0px,-4px);-webkit-transform:rotate(3deg) translate(0px,-4px);-ms-transform:rotate(3deg) translate(0px,-4px);transform:rotate(3deg) translate(0px,-4px);}#nprogress .spinner{display:${spinner ? "block" : "none"};position:fixed;z-index:1031;top:15px;right:15px;}#nprogress .spinner-icon{width:18px;height:18px;box-sizing:border-box;border:solid 2px transparent;border-top-color:${color};border-left-color:${color};border-radius:50%;-webkit-animation:nprogresss-spinner 400ms linear infinite;-webkit-animation:nprogress-spinner 400ms linear infinite;animation:nprogress-spinner 400ms linear infinite;}.nprogress-custom-parent{overflow:hidden;position:relative;}.nprogress-custom-parent #nprogress .spinner,.nprogress-custom-parent #nprogress .bar{position:absolute;}@-webkit-keyframes nprogress-spinner{0%{-webkit-transform:rotate(0deg);}100%{-webkit-transform:rotate(360deg);}}@-webkit-keyframes nprogress-spinner{0%{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}100%{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}@keyframes nprogress-spinner{0%{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}100%{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkY6XFx4YW1wcFxcaHRkb2NzXFxSZWFjdFxcbmV4dC1tb3ZpZS1hcHBcXGNvbXBvbmVudHNcXE5Qcm9ncmVzc0NvbnRhaW5lci5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUE4Q3lCLEFBRytCLEFBR29CLEFBUzFCLEFBWXVCLEFBTzFCLEFBV0ssQUFLRSxBQUllLEFBR0UsQUFLVixBQUdFLFdBOUJmLEdBbkJNLEVBOEJBLEVBS3BCLEVBL0NBLEdBZ0N3QixRQW1CdEIsQ0F0Q1UsQ0F5Q1YsQ0FYRixHQW5CaUIsR0FyQkEsRUFXSCxHQW1CaUIsT0FSaEIsRUFWRCxDQVhDLFVBc0JKLENBVjhFLEVBWGpGLE1BQ0MsQUFxQkksQUFPbUMsT0EzQm5DLEFBb0RYLElBL0JGLEVBa0NFLEtBdERXLFdBQ2IsaUJBMEJpRCxnQ0FsQnJDLFVBQzBDLEtBa0JsQyxrQkFDeUMsNEJBbEJYLCtCQW1CRSxnQkFsQk4sNEZBbUI5QyxpREFsQkEiLCJmaWxlIjoiRjpcXHhhbXBwXFxodGRvY3NcXFJlYWN0XFxuZXh0LW1vdmllLWFwcFxcY29tcG9uZW50c1xcTlByb2dyZXNzQ29udGFpbmVyLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IE5Qcm9ncmVzcyBmcm9tIFwibnByb2dyZXNzXCI7XHJcbmltcG9ydCBSb3V0ZXIgZnJvbSBcIm5leHQvcm91dGVyXCI7XHJcblxyXG5jbGFzcyBOUHJvZ3Jlc3NDb250YWluZXIgZXh0ZW5kcyBSZWFjdC5Db21wb25lbnQge1xyXG4gIHN0YXRpYyBkZWZhdWx0UHJvcHMgPSB7XHJcbiAgICBjb2xvcjogXCIjMjI5OUREXCIsXHJcbiAgICBzaG93QWZ0ZXJNczogMzAwLFxyXG4gICAgc3Bpbm5lcjogdHJ1ZVxyXG4gIH07XHJcblxyXG4gIHRpbWVyID0gbnVsbDtcclxuXHJcbiAgcm91dGVDaGFuZ2VTdGFydCA9ICgpID0+IHtcclxuICAgIGNvbnN0IHsgc2hvd0FmdGVyTXMgfSA9IHRoaXMucHJvcHM7XHJcbiAgICBjbGVhclRpbWVvdXQodGhpcy50aW1lcik7XHJcbiAgICB0aGlzLnRpbWVyID0gc2V0VGltZW91dChOUHJvZ3Jlc3Muc3RhcnQsIHNob3dBZnRlck1zKTtcclxuICB9XHJcblxyXG4gIHJvdXRlQ2hhbmdlRW5kID0gKCkgPT4ge1xyXG4gICAgY2xlYXJUaW1lb3V0KHRoaXMudGltZXIpO1xyXG4gICAgTlByb2dyZXNzLmRvbmUoKTtcclxuICB9XHJcblxyXG4gIGNvbXBvbmVudERpZE1vdW50KCkge1xyXG4gICAgY29uc3QgeyBvcHRpb25zIH0gPSB0aGlzLnByb3BzO1xyXG5cclxuICAgIGlmIChvcHRpb25zKSB7XHJcbiAgICAgIE5Qcm9ncmVzcy5jb25maWd1cmUob3B0aW9ucyk7XHJcbiAgICB9XHJcblxyXG4gICAgUm91dGVyLmV2ZW50cy5vbigncm91dGVDaGFuZ2VTdGFydCcsIHRoaXMucm91dGVDaGFuZ2VTdGFydCk7XHJcbiAgICBSb3V0ZXIuZXZlbnRzLm9uKCdyb3V0ZUNoYW5nZUNvbXBsZXRlJywgdGhpcy5yb3V0ZUNoYW5nZUVuZCk7XHJcbiAgICBSb3V0ZXIuZXZlbnRzLm9uKCdyb3V0ZUNoYW5nZUVycm9yJywgdGhpcy5yb3V0ZUNoYW5nZUVuZCk7XHJcbiAgfVxyXG5cclxuICBjb21wb25lbnRXaWxsVW5tb3VudCgpIHtcclxuICAgIGNsZWFyVGltZW91dCh0aGlzLnRpbWVyKTtcclxuICAgIFJvdXRlci5ldmVudHMub2ZmKCdyb3V0ZUNoYW5nZVN0YXJ0JywgdGhpcy5yb3V0ZUNoYW5nZVN0YXJ0KTtcclxuICAgIFJvdXRlci5ldmVudHMub2ZmKCdyb3V0ZUNoYW5nZUNvbXBsZXRlJywgdGhpcy5yb3V0ZUNoYW5nZUVuZCk7XHJcbiAgICBSb3V0ZXIuZXZlbnRzLm9mZigncm91dGVDaGFuZ2VFcnJvcicsIHRoaXMucm91dGVDaGFuZ2VFbmQpO1xyXG4gIH1cclxuXHJcbiAgcmVuZGVyKCkge1xyXG4gICAgY29uc3QgeyBjb2xvciwgc3Bpbm5lciB9ID0gdGhpcy5wcm9wcztcclxuXHJcbiAgICByZXR1cm4gKFxyXG4gICAgICA8c3R5bGUganN4IGdsb2JhbD57YFxyXG4gICAgICAgICNucHJvZ3Jlc3Mge1xyXG4gICAgICAgICAgcG9pbnRlci1ldmVudHM6IG5vbmU7XHJcbiAgICAgICAgfVxyXG4gICAgICAgICNucHJvZ3Jlc3MgLmJhciB7XHJcbiAgICAgICAgICBiYWNrZ3JvdW5kOiAke2NvbG9yfTtcclxuICAgICAgICAgIHBvc2l0aW9uOiBmaXhlZDtcclxuICAgICAgICAgIHotaW5kZXg6IDEwMzE7XHJcbiAgICAgICAgICB0b3A6IDA7XHJcbiAgICAgICAgICBsZWZ0OiAwO1xyXG4gICAgICAgICAgd2lkdGg6IDEwMCU7XHJcbiAgICAgICAgICBoZWlnaHQ6IDJweDtcclxuICAgICAgICB9XHJcbiAgICAgICAgI25wcm9ncmVzcyAucGVnIHtcclxuICAgICAgICAgIGRpc3BsYXk6IGJsb2NrO1xyXG4gICAgICAgICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgICAgICAgcmlnaHQ6IDBweDtcclxuICAgICAgICAgIHdpZHRoOiAxMDBweDtcclxuICAgICAgICAgIGhlaWdodDogMTAwJTtcclxuICAgICAgICAgIGJveC1zaGFkb3c6IDAgMCAxMHB4ICR7Y29sb3J9LCAwIDAgNXB4ICR7Y29sb3J9O1xyXG4gICAgICAgICAgb3BhY2l0eTogMTtcclxuICAgICAgICAgIC13ZWJraXQtdHJhbnNmb3JtOiByb3RhdGUoM2RlZykgdHJhbnNsYXRlKDBweCwgLTRweCk7XHJcbiAgICAgICAgICAtbXMtdHJhbnNmb3JtOiByb3RhdGUoM2RlZykgdHJhbnNsYXRlKDBweCwgLTRweCk7XHJcbiAgICAgICAgICB0cmFuc2Zvcm06IHJvdGF0ZSgzZGVnKSB0cmFuc2xhdGUoMHB4LCAtNHB4KTtcclxuICAgICAgICB9XHJcbiAgICAgICAgI25wcm9ncmVzcyAuc3Bpbm5lciB7XHJcbiAgICAgICAgICBkaXNwbGF5OiAke3NwaW5uZXIgPyBcImJsb2NrXCIgOiBcIm5vbmVcIn07XHJcbiAgICAgICAgICBwb3NpdGlvbjogZml4ZWQ7XHJcbiAgICAgICAgICB6LWluZGV4OiAxMDMxO1xyXG4gICAgICAgICAgdG9wOiAxNXB4O1xyXG4gICAgICAgICAgcmlnaHQ6IDE1cHg7XHJcbiAgICAgICAgfVxyXG4gICAgICAgICNucHJvZ3Jlc3MgLnNwaW5uZXItaWNvbiB7XHJcbiAgICAgICAgICB3aWR0aDogMThweDtcclxuICAgICAgICAgIGhlaWdodDogMThweDtcclxuICAgICAgICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XHJcbiAgICAgICAgICBib3JkZXI6IHNvbGlkIDJweCB0cmFuc3BhcmVudDtcclxuICAgICAgICAgIGJvcmRlci10b3AtY29sb3I6ICR7Y29sb3J9O1xyXG4gICAgICAgICAgYm9yZGVyLWxlZnQtY29sb3I6ICR7Y29sb3J9O1xyXG4gICAgICAgICAgYm9yZGVyLXJhZGl1czogNTAlO1xyXG4gICAgICAgICAgLXdlYmtpdC1hbmltYXRpb246IG5wcm9ncmVzc3Mtc3Bpbm5lciA0MDBtcyBsaW5lYXIgaW5maW5pdGU7XHJcbiAgICAgICAgICBhbmltYXRpb246IG5wcm9ncmVzcy1zcGlubmVyIDQwMG1zIGxpbmVhciBpbmZpbml0ZTtcclxuICAgICAgICB9XHJcbiAgICAgICAgLm5wcm9ncmVzcy1jdXN0b20tcGFyZW50IHtcclxuICAgICAgICAgIG92ZXJmbG93OiBoaWRkZW47XHJcbiAgICAgICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgICAgICAgfVxyXG4gICAgICAgIC5ucHJvZ3Jlc3MtY3VzdG9tLXBhcmVudCAjbnByb2dyZXNzIC5zcGlubmVyLFxyXG4gICAgICAgIC5ucHJvZ3Jlc3MtY3VzdG9tLXBhcmVudCAjbnByb2dyZXNzIC5iYXIge1xyXG4gICAgICAgICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgICAgIH1cclxuICAgICAgICBALXdlYmtpdC1rZXlmcmFtZXMgbnByb2dyZXNzLXNwaW5uZXIge1xyXG4gICAgICAgICAgMCUge1xyXG4gICAgICAgICAgICAtd2Via2l0LXRyYW5zZm9ybTogcm90YXRlKDBkZWcpO1xyXG4gICAgICAgICAgfVxyXG4gICAgICAgICAgMTAwJSB7XHJcbiAgICAgICAgICAgIC13ZWJraXQtdHJhbnNmb3JtOiByb3RhdGUoMzYwZGVnKTtcclxuICAgICAgICAgIH1cclxuICAgICAgICB9XHJcbiAgICAgICAgQGtleWZyYW1lcyBucHJvZ3Jlc3Mtc3Bpbm5lciB7XHJcbiAgICAgICAgICAwJSB7XHJcbiAgICAgICAgICAgIHRyYW5zZm9ybTogcm90YXRlKDBkZWcpO1xyXG4gICAgICAgICAgfVxyXG4gICAgICAgICAgMTAwJSB7XHJcbiAgICAgICAgICAgIHRyYW5zZm9ybTogcm90YXRlKDM2MGRlZyk7XHJcbiAgICAgICAgICB9XHJcbiAgICAgICAgfVxyXG4gICAgICBgfTwvc3R5bGU+XHJcbiAgICApO1xyXG4gIH1cclxufVxyXG5cclxuZXhwb3J0IGRlZmF1bHQgTlByb2dyZXNzQ29udGFpbmVyOyJdfQ== */
+/*@ sourceURL=F:\\xampp\\htdocs\\React\\next-movie-app\\components\\NProgressContainer.js */`);
+  }
+
+}
+
+_defineProperty(NProgressContainer, "defaultProps", {
+  color: "#2299DD",
+  showAfterMs: 300,
+  spinner: true
+});
+
+/* harmony default export */ __webpack_exports__["default"] = (NProgressContainer);
 
 /***/ }),
 
@@ -2266,6 +2374,28 @@ module.exports = require("next/head");
 
 /***/ }),
 
+/***/ "next/router":
+/*!******************************!*\
+  !*** external "next/router" ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/router");
+
+/***/ }),
+
+/***/ "nprogress":
+/*!****************************!*\
+  !*** external "nprogress" ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("nprogress");
+
+/***/ }),
+
 /***/ "prop-types":
 /*!*****************************!*\
   !*** external "prop-types" ***!
@@ -2307,6 +2437,17 @@ module.exports = require("react");
 /***/ (function(module, exports) {
 
 module.exports = require("react-is");
+
+/***/ }),
+
+/***/ "styled-jsx/style":
+/*!***********************************!*\
+  !*** external "styled-jsx/style" ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("styled-jsx/style");
 
 /***/ }),
 
